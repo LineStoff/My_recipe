@@ -9,6 +9,7 @@ body {
     color: white;
 }
 
+
 /* En-tête */
 header {
     background: linear-gradient(90deg, #e0cda9, #e0cda9);
@@ -64,8 +65,9 @@ nav a:hover {
     transform: scale(1.01);
 }
 
+/*dans l'onglet recette : nom de la recette */
 .recette h2 {
-    color: #ff9800;
+    color: #c6ab77;
     margin-top: 0;
 }
 
@@ -74,17 +76,62 @@ nav a:hover {
 }
 
 
+
+/* Conteneur principal : image + ingrédients */
+.recette-container {
+    display: flex;
+    align-items: center; /* centré verticalement */
+    gap: 40px;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 1000px;
+}
+
+
+/* Image à gauche */
 .photo-recette {
-    width: 100%;
-    border-radius: 12px;
-    margin-bottom: 15px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+
+/* Bloc ingrédients à droite */
+.recette-info {
+    flex: 1;
+}
+
+/* nom de la recette pour chaque recette*/
+.recette-info h2 { 
+    margin-top: 0;
+    align-items: center; 
+    color: #fdc85e;;
+}
+
+/* Bloc en dessous */
+.recette-details {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background: #445141;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.recette-details p { white-space: pre-line; 
+}
+/* bloc de description recette*/
+.recette-details h3 {
+    margin-top: 0;
+    color: #ff9800;
 }
 
 
 
-
 /* IMAGE DES PAGES ENTREE , PLATS , DESSERTS */
+
 
 .catalogue {
     display: grid;
@@ -120,6 +167,7 @@ nav a:hover {
     margin: 0;
     font-size: 1.2rem;
     color: #ff9800;
+    
 }
 
 
@@ -138,7 +186,7 @@ nav a:hover {
 .carte-large {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 180px;
     text-decoration: none;
     color: #333;
     padding: 10px 0;
@@ -166,3 +214,12 @@ nav a:hover {
 .carte-large.inverse {
     flex-direction: row-reverse;
 }
+
+
+.temps-cuisson span {
+    font-size: 1.2rem; /* augmente la taille du texte */
+    font-weight: bold; /* optionnel : rend le texte plus visible */
+}
+
+
+.temps-cuisson { display: flex; align-items: center; /* centre verticalement */ gap: 10px; /* espace entre l’image et le texte */}
