@@ -1,3 +1,4 @@
+//quantités photos
 document.addEventListener("DOMContentLoaded", () => {
     const recettes = document.querySelectorAll(".recette-info");
 
@@ -24,8 +25,43 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 const newQty = (qty / base) * personnes;
 
-                li.textContent = `${newQty} ${unit} ${name}`;
+
+                if( newQty < 1 )
+                {
+                    li.textContent = `${newQty.toFixed(2)} ${unit} ${name}`;
+                }
+                else
+                {
+                    li.textContent = `${Math.round(newQty)} ${unit} ${name}`;
+                }
             });
         });
     });
 });
+
+
+
+//defilement des photos 
+document.querySelectorAll(".carrousel").forEach(carrousel => {
+    const images = carrousel.querySelectorAll("img");
+    const prev = carrousel.querySelector(".prev");
+    const next = carrousel.querySelector(".next");
+
+    let index = 0;
+
+    function showImage(i) {
+        images.forEach(img => img.classList.remove("active"));
+        images[i].classList.add("active");
+    }
+
+    next.addEventListener("click", () => {
+        index = (index + 1) % images.length;
+        showImage(index);
+    });
+
+    prev.addEventListener("click", () => {
+        index = (index - 1 + images.length) % images.length;
+        showImage(index);
+    });
+});
+
