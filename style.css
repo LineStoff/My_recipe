@@ -5,27 +5,17 @@ body {
     margin: 0;
     padding: 0;
     color: white;
-    padding-top: 150px; /* ajuste selon la hauteur de ton header */ 
 }
+
 
 /* En-tête */
 header {
     background: linear-gradient(90deg, #e0cda9, #e0cda9);
     padding: 50px;
     text-align: center;
-    color: #445141;
+    color: #445141; /*texte */
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-
-    -webkit-transform: translateZ(0); /* stabilise sur mobile */
 }
-
-
 
 header h1 {
     margin: 0;
@@ -208,7 +198,7 @@ nav a:hover {
 }
 
 .carrousel button:hover {
-    background: #44514169; 
+    background: #4451411c; 
 }
 
 
@@ -309,14 +299,3 @@ nav a:hover {
 
 
 
-
-
-@media (max-width: 600px) {
-    header {
-        padding: 25px; /* moitié moins, plus stable */
-    }
-
-    body {
-        padding-top: 120px; /* on ajuste pour compenser */
-    }
-}
