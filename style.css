@@ -5,16 +5,25 @@ body {
     margin: 0;
     padding: 0;
     color: white;
+    padding-top: 140px; /* ajusté pour ton header */
 }
 
 
 /* En-tête */
 header {
     background: linear-gradient(90deg, #e0cda9, #e0cda9);
-    padding: 50px;
+    padding: 40px; /* un peu plus petit = plus stable sur mobile */
     text-align: center;
-    color: #445141; /*texte */
+    color: #445141;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    -webkit-transform: translateZ(0); /* stabilise sur iPhone */
 }
 
 header h1 {
@@ -33,6 +42,7 @@ nav {
     text-align: center;
     margin: 20px 0;
 }
+
 
 nav a {
     margin: 0 50px;
