@@ -23,7 +23,6 @@ header {
     width: 100%;
     z-index: 1000;
 
-    -webkit-transform: translateZ(0); /* stabilise sur iPhone */
 }
 
 header h1 {
