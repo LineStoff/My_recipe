@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   
+    <meta charset="UTF-8">
+    <title>Tout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">
+        <img src="logo/logo.png" alt="Accueil">
+    </a>
+    <h1>Autres</h1>
+</header>
+
+
+
+
+<div class="sous-categories">
+    <button data-filter="all">Tout</button>
+    <button data-filter="entree">Entrée</button>
+    <button data-filter="plat">Plats</button>
+    <button data-filter="dessert">Desserts</button>
+    <button data-filter="boisson">Boissons</button>
+    <button data-filter="froid">Froid</button>
+    <button data-filter="chaud">Chaud</button>
+    <button data-filter="fete">Fêtes</button>
+</div>
+
+<div class="catalogue">
+     <!-- ENTREE -->
+    <a href="entrees/dome_saumon.html" class="carte" data-cat="fete froid entree">
+        <img src="images/dome_saumon.jpg" alt="Dômes au saumon">
+        <h3>Dômes au saumon</h3>
+    </a>
+
+    <a href="entrees/verrines.html" class="carte" data-cat="fete froid rapide entree">
+        <img src="images/verrines.jpg" alt="Verrines">
+        <h3>Verrines salés au saumon</h3>
+    </a>
+
+    <a href="entrees/feuilletes_chevre.html" class="carte" data-cat="chaud entree">
+        <img src="images/feuilletes_chevre.jpg" alt="Feuilletés au chèvre">
+        <h3>Feuilletés au chèvre</h3>
+    </a>
+
+
+
+   <!-- PLATS -->
+
+       <a href="plats/cordon_bleu.html" class="carte" data-cat="chaud plat ">
+        <img src="images/cordon_bleu.jpg" alt="Cordon bleu">
+        <h3>Cordon bleu maison</h3> 
+    </a>
+
+     <a href="plats/pate_crevettes.html" class="carte" data-cat="chaud plat">
+        <img src="images/pate_crevettes.jpg" alt="Tagliatelles aux crevettes">
+        <h3>Tagliatelles aux crevettes</h3>
+    </a>
+
+       <!-- DESSERTS -->
+
+        <a href="desserts/pancakes.html" class="carte"data-cat="chaud dessert" >
+        <img src="images/pancakes.jpg" alt="Pancake à la banane">
+        <h3>Pancake à la banane</h3>
+    </a>
+
+      <a href="desserts/fondant_chocolat.html" class="carte" data-cat="chaud dessert">
+        <img src="images/fondant_chocolat.jpg" alt="Fondant au chocolat">
+        <h3>Fondant au chocolat</h3>
+    </a>
+      <a href="desserts/creme_citron.html" class="carte" data-cat="froid dessert">
+        <img src="images/creme_citron2.jpg" alt="Crème citron">
+        <h3>Crème citron</h3>
+    </a>
+     
+
+   <!-- BOISSONS -->
+
+      <a href="boissons/cocktail1.html" class="carte" data-cat="froid boisson">
+        <img src="images/cocktail_1.jpg" alt="Cocktail à la coco">
+        <h3>Cocktail coucher de soleil</h3>
+    </a>
+    
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

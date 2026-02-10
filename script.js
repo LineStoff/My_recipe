@@ -68,13 +68,25 @@ document.querySelectorAll(".carrousel").forEach(carrousel => {
 
 
 //sous categories 
-document.querySelectorAll(".sous-categories button").forEach(btn => {
+const buttons = document.querySelectorAll(".sous-categories button");
+const cartes = document.querySelectorAll(".carte");
+
+// Active "Tout" au chargement
+document.querySelector('.sous-categories button[data-filter="all"]').classList.add("active");
+
+buttons.forEach(btn => {
     btn.addEventListener("click", () => {
+
+        // Retire l'état actif de tous les boutons
+        buttons.forEach(b => b.classList.remove("active"));
+
+        // Ajoute l'état actif au bouton cliqué
+        btn.classList.add("active");
+
         const filter = btn.dataset.filter;
-        const cartes = document.querySelectorAll(".carte");
 
         cartes.forEach(carte => {
-            const cat = carte.dataset.cat;
+            const cat = carte.dataset.cat || "";
 
             if (filter === "all" || cat.includes(filter)) {
                 carte.style.display = "block";

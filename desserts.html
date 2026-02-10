@@ -15,24 +15,30 @@
 </header>
 
 <nav>
-    <a href="index.html">Accueil</a>
     <a href="entrees.html">Entrées</a>
     <a href="plats.html">Plats</a>
-    <a href="boissons.html">Boissons</a>
+        <a href="tout.html">Autres</a>
 </nav>
+
+<div class="sous-categories">
+    <button data-filter="all">Tout</button>
+    <button data-filter="chaud">Chaud</button>
+    <button data-filter="fete">Fêtes</button>
+    
+</div>
 
 <div class="catalogue">
     
-    <a href="desserts/pancakes.html" class="carte">
+    <a href="desserts/pancakes.html" class="carte"data-cat="chaud " >
         <img src="images/pancakes.jpg" alt="Pancake à la banane">
         <h3>Pancake à la banane</h3>
     </a>
 
-      <a href="desserts/fondant_chocolat.html" class="carte">
+      <a href="desserts/fondant_chocolat.html" class="carte" data-cat="chaud ">
         <img src="images/fondant_chocolat.jpg" alt="Fondant au chocolat">
         <h3>Fondant au chocolat</h3>
     </a>
-      <a href="desserts/creme_citron.html" class="carte">
+      <a href="desserts/creme_citron.html" class="carte" data-cat="froid ">
         <img src="images/creme_citron2.jpg" alt="Crème citron">
         <h3>Crème citron</h3>
     </a>
@@ -40,6 +46,6 @@
 
 
 </div>
-
+<script src="script.js"></script>
 </body>
 </html>

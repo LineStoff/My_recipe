@@ -16,24 +16,27 @@
 </header>
 
 <nav>
-    <a href="index.html">Accueil</a>
     <a href="entrees.html">Entrées</a>
     <a href="desserts.html">Desserts</a>
-    <a href="boissons.html">Boissons</a>
+   <a href="tout.html">Autres</a>
 </nav>
 
 
-
+<div class="sous-categories">
+    <button data-filter="all">Tout</button>
+    <button data-filter="fete">Fêtes</button>
+    
+</div>
 
 
 <div class="catalogue">
     
-    <a href="plats/cordon_bleu.html" class="carte">
+    <a href="plats/cordon_bleu.html" class="carte" data-cat="chaud ">
         <img src="images/cordon_bleu.jpg" alt="Cordon bleu">
-        <h3>Cordon bleu maison</h3>
+        <h3>Cordon bleu maison</h3> 
     </a>
 
-     <a href="plats/pate_crevettes.html" class="carte">
+     <a href="plats/pate_crevettes.html" class="carte" data-cat="chaud ">
         <img src="images/pate_crevettes.jpg" alt="Tagliatelles aux crevettes">
         <h3>Tagliatelles aux crevettes</h3>
     </a>
@@ -46,6 +49,6 @@
 
 
 </div>
-
+<script src="script.js"></script>
 </body>
 </html>

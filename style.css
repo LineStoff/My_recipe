@@ -10,7 +10,7 @@ body {
 /* En-tête */
 header {
     background: linear-gradient(90deg, #e0cda9, #e0cda9);
-    padding: 50px;
+    padding: 60px;
     text-align: center;
     color: #445141;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
@@ -325,7 +325,10 @@ nav a:hover {
 }
 
 
-
+.sous-categories button.active { 
+    background: #e0cda9; 
+    color: #445141;
+}
 
 
 
@@ -343,6 +346,7 @@ nav a:hover {
 
 @media (max-width: 700px) {
 
+ 
     header .logo img {
         width: 30px;   /* taille adaptée au mobile */
         height: 30px;
