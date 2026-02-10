@@ -14,7 +14,28 @@ header {
     text-align: center;
     color: #445141;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    position: relative; /* permet de placer le logo */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* centre le titre */
 }
+
+
+
+header .logo {
+    position: absolute;
+    left: 20px; /* place le logo à gauche */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header .logo img {
+    width: 175px;   /* taille du logo */
+    height: 175px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
 
 header h1 {
     margin: 0;
@@ -293,7 +314,7 @@ nav a:hover {
     border: none;
     padding: 10px 20px;
     border-radius: 10px;
-    font-size: 1.2rem;
+    font-size: 2rem;
     cursor: pointer;
     transition: background 0.3s ease;
 }
