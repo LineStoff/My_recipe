@@ -341,3 +341,12 @@ nav a:hover {
 
 
 
+@media (max-width: 700px) {
+
+
+
+    header .logo img {
+        width: 45px;   /* taille adaptée au mobile */
+        height: 45px;
+    }
+}
