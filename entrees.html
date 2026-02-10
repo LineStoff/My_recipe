@@ -5,7 +5,6 @@
     <title>Entrées</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
@@ -16,39 +15,33 @@
     <a href="index.html">Accueil</a>
     <a href="plats.html">Plats</a>
     <a href="desserts.html">Desserts</a>
-    
     <a href="boissons.html">Boissons</a>
 </nav>
 
-
-
-
+<div class="sous-categories">
+    <button data-filter="noel">Noël</button>
+    <button data-filter="rapide">Rapide</button>
+    <button data-filter="froid">Froid</button>
+    <button data-filter="all">Tout</button>
+</div>
 
 <div class="catalogue">
-    
-    <a href="entrees/dome_saumon.html" class="carte">
+    <a href="entrees/dome_saumon.html" class="carte" data-cat="noel froid">
         <img src="images/dome_saumon.jpg" alt="Dômes au saumon">
         <h3>Dômes au saumon</h3>
     </a>
 
-    
-      <a href="entrees/verrines.html" class="carte">
+    <a href="entrees/verrines.html" class="carte" data-cat="noel froid rapide">
         <img src="images/verrines.jpg" alt="Verrines">
         <h3>Verrines salés au saumon</h3>
     </a>
-    <a href="entrees/feuilletes_chevre.html" class="carte">
+
+    <a href="entrees/feuilletes_chevre.html" class="carte" data-cat="chaud rapide">
         <img src="images/feuilletes_chevre.jpg" alt="Feuilletés au chèvre">
         <h3>Feuilletés au chèvre</h3>
-     </a>
-
-
+    </a>
 </div>
 
-
-
-
-
-</div>
-
+<script src="script.js"></script>
 </body>
 </html>

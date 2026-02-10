@@ -65,3 +65,22 @@ document.querySelectorAll(".carrousel").forEach(carrousel => {
     });
 });
 
+
+
+//sous categories 
+document.querySelectorAll(".sous-categories button").forEach(btn => {
+    btn.addEventListener("click", () => {
+        const filter = btn.dataset.filter;
+        const cartes = document.querySelectorAll(".carte");
+
+        cartes.forEach(carte => {
+            const cat = carte.dataset.cat;
+
+            if (filter === "all" || cat.includes(filter)) {
+                carte.style.display = "block";
+            } else {
+                carte.style.display = "none";
+            }
+        });
+    });
+});

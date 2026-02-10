@@ -38,7 +38,10 @@ nav a {
     color: white;
     font-weight: bold;
     font-size: 2.5rem;
+    transition: color 0.3s ease;
 }
+
+
 
 nav a:hover {
     color: #e0cda9;
@@ -270,3 +273,64 @@ nav a:hover {
     align-items: center;
     gap: 10px;
 }
+
+
+
+
+
+
+.sous-categories {
+    text-align: center;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.sous-categories button {
+    background: #445141;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.sous-categories button:hover {
+    background: #e0cda9;
+    color: #445141;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+    .photo-recette,
+    .carrousel {
+        width: 100%;
+        height: auto;
+    }
+
+    .recette-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+.carte, .recette {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.carte:hover, .recette:hover {
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+
+
