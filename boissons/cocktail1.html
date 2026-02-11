@@ -11,14 +11,13 @@
 <body>
 
 <header>
-    <a href="index.html" class="logo">
+    <a href="../index.html" class="logo">
        <img src="../logo/logo.png" alt="Accueil">
     </a>
      <h1><a href="../boissons.html">Boissons</a></h1> </header>
 
 
 <nav>
-    <a href="../index.html">Accueil</a>
     <a href="../entrees.html">Entrées</a>
     <a href="../plats.html">Plats</a>
     <a href="../desserts.html">Boissons</a>
@@ -27,8 +26,13 @@
 <div class="recette-container">
 
     <!-- Image à gauche -->
-    <img src="../images/cocktail_coucher2.jpg" alt="image" class="photo-recette">
-
+    <div class="carrousel">
+    <img src="../images/cocktail_coucher2.jpg" class="active">
+    <img src="../images/cocktail_coucher.jpg">
+    <img src="../images/cocktail_coucher3.jpg">
+    <button class="prev">‹</button> 
+    <button class="next">›</button>
+    </div>
     <!-- Ingrédients à droite -->
     <div class="recette-info" data-base="2">
         <h2>Cocktail coucher de soleil</h2>
